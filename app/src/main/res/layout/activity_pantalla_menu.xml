@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PantallaMenu">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="181dp"
+        app:srcCompat="@mipmap/ic_registro_foreground" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/negroapp"
+        android:layout_marginBottom="15dp"
+        android:text="Registro de Usuario"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical">
+
+        <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:textSize="20dp"
+        android:text="Usuario" />
+
+
+        <EditText
+        android:id="@+id/registroUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="" />
+
+
+        <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:textSize="20dp"
+        android:text="Correo" />
+
+
+        <EditText
+        android:id="@+id/registroCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="" />
+
+        <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:textSize="20dp"
+        android:text="Contraseña" />
+
+        <EditText
+        android:id="@+id/registroContrasenia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="Name" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:background="@color/negroapp"
+            android:textColor="@color/white"
+            android:text="Registrarme" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/rojoapp"
+            android:textColor="@color/white"
+            android:text="Cancelar" />
+    </LinearLayout>
+
+
+</LinearLayout>

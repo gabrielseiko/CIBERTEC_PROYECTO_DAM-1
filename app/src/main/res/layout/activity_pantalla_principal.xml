@@ -25,7 +25,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:padding="15dp"
         android:orientation="vertical">
@@ -73,6 +73,22 @@
             android:text="Ingresar" />
 
     </LinearLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:textSize="20dp"
+            android:textColor="@color/azulapp"
+            android:textStyle="bold"
+            android:text="Registrate Ahora"
+            android:gravity="center"
+            android:layout_gravity="bottom"/>
+
 
 
 </LinearLayout>
