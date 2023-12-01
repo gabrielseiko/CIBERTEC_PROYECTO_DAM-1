@@ -7,4 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <!--Colores-->
+    <color name="negroapp">#373739</color>
+    <color name="amarilloapp">#faff1e</color>
+    <color name="rojoapp">#f2331a</color>
+    <color name="azulapp">#4525d2</color>
+    <color name="verdeapp">#00e676</color>
+    <color name="naranjaapp">#ff6f00</color>
 </resources>
