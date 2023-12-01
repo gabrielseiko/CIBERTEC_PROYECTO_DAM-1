@@ -22,10 +22,10 @@ companion object{
     //creando tabla
     override fun onCreate(db: SQLiteDatabase) {
         var queryCreateTable =
-            ("CREATE TABLE " + TABLA_USUARIO + " ( " +
+            (" CREATE TABLE " + TABLA_USUARIO + " ( " +
                                COLUMN_ID + " INT PRIMARY KEY, " +
-                               COLUMN_NOMBRE + " TEXT " +
-                               COLUMN_CORREO + " TEXT " +
+                               COLUMN_NOMBRE + " TEXT, " +
+                               COLUMN_CORREO + " TEXT, " +
                                COLUMN_CONTRASENIA + " TEXT " + " ) "
                     )
         db.execSQL(queryCreateTable)
@@ -49,10 +49,10 @@ companion object{
     }
 
     //funcion para acceder inicio de sesion
-    fun Acceder(email:String, contrasenia: String ): Cursor?{
+    fun Acceder(correo:String, contrasenia: String ): Cursor?{
         val db = this.readableDatabase
-        val sql = " SELECT * FROM " + TABLA_USUARIO + " WHERE " + COLUMN_CORREO + " = '" + email + "' AND " +
-                                                COLUMN_CONTRASENIA + " = '" + contrasenia + "' "
+        val sql = " SELECT * FROM " + TABLA_USUARIO + " WHERE " + COLUMN_CORREO + " = '" + correo + "' AND " +
+                                        COLUMN_CONTRASENIA + " = '" + contrasenia + "' "
         return db.rawQuery(sql, null)
     }
 
