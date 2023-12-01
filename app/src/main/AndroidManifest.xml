@@ -16,7 +16,13 @@
         android:theme="@style/Theme.AppLibreria"
         tools:targetApi="31">
         <activity
+            android:name=".item_libro"
+            android:exported="false" />
+        <activity
             android:name=".PantallaMenu"
+            android:exported="false" />
+        <activity
+            android:name=".PantallaRegistro"
             android:exported="false" />
         <activity
             android:name=".PantallaPrincipal"
