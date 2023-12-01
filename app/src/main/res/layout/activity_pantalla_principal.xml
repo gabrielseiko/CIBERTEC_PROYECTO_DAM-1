@@ -61,7 +61,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPassword"
-            android:text="Name" />
+            android:text="" />
 
         <Button
             android:id="@+id/btn_ingresar"
