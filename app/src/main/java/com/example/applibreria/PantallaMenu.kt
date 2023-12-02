@@ -1,5 +1,6 @@
 package com.example.applibreria
 
+
 import android.app.Dialog
 import android.content.Intent
 import android.graphics.Color
@@ -18,7 +19,7 @@ class PantallaMenu : AppCompatActivity() {
 
         //BOTONES
         val btnCerrarSesion: Button = findViewById(R.id.cerrarSesion)
-
+        val btnListado: Button = findViewById(R.id.listarLibros)
 
 
         //Llamando al Modal Cerrar
@@ -27,8 +28,15 @@ class PantallaMenu : AppCompatActivity() {
             val bodyMsg: String = "¿Esta seguro que desea salir de la App?"
             showModalConfirmExit(titleMsg, bodyMsg);
         }
+        //llamando al recylcer (listado)
+        btnListado.setOnClickListener{
+            val listadoScreen = Intent(this, ListadoLibros::class.java)
+            startActivity(listadoScreen)
+        }
 
     }
+
+
 
     //modal
     private fun showModalConfirmExit(titleMsg: String, bodyMsg: String) {

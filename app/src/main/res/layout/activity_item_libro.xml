@@ -21,20 +21,12 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:layout_marginTop="20dp"
-            android:textSize="25dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="20dp"
             android:textStyle="bold"
             android:textColor="@color/negroapp"
             android:text="TITULO" />
 
-        <TextView
-            android:id="@+id/autor"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:textSize="20dp"
-            android:text="Autor" />
+
     </LinearLayout>
 </androidx.cardview.widget.CardView>

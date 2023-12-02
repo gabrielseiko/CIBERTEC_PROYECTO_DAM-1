@@ -16,7 +16,10 @@
         android:theme="@style/Theme.AppLibreria"
         tools:targetApi="31">
         <activity
-            android:name=".Modal_MensagerSalir"
+            android:name=".LibroDatos"
+            android:exported="false" />
+        <activity
+            android:name=".modal_MensagerSalir"
             android:exported="false" />
         <activity
             android:name=".ListadoLibros"
